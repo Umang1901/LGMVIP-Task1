@@ -1,0 +1,166 @@
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background-color: #b9c2a5;
+}
+
+.container {
+    background-color: #350194;
+    padding: 60px;
+    border-radius: 8px;
+    box-shadow: 1px 20px 50px black;
+}
+
+.h1-container{
+    
+    margin-left: -45px;
+    width: 130%;
+    background-color: #49d9de;
+    border-bottom-right-radius: 20px;
+    border-top-left-radius: 20px;
+    box-shadow: 10px 5px 15px black;
+    
+}
+
+h1 {
+    text-align: center;
+    color: red;
+    font-family: monotype corsiva;
+}
+
+.input-container {
+    display: flex;
+    justify-content: space-between;
+    width: 110%;
+    margin-left: -40px;
+    margin-right: 30px;
+    padding: 25px;
+    background-color: #9f71f5;
+    border-top-left-radius: 3px;
+    border-top-right-radius: 20px;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 3px;
+    box-shadow: 10px 5px 15px black;
+}
+
+#todo-input {
+    width: 60%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-bottom-left-radius: 50px;
+    border-top-right-radius: 50px;
+    box-shadow: -1px 2px 6px 10px #b3ff00;
+}
+
+#add-button {
+    padding: 10px;
+    
+    width: 20%;
+    border: none;
+    background-color: #28a745;
+    color: white;
+    box-shadow: -1px 2px 6px 10px red;
+    cursor: pointer;
+    border-bottom-left-radius: 20px;
+    border-top-right-radius: 20px;
+}
+
+#add-button:hover {
+    background-color: #218838;
+    margin-top: -2px;
+    margin-bottom: 2px;
+    padding: 12px;
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+    width: 127%;
+    margin-left: -35px;
+}
+
+li {
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+    box-shadow: 1px -4px 15px black;
+}
+
+li:nth-child(odd) {
+    background-color: white;
+}
+
+li:nth-child(even) {
+    background-color: skyblue;
+}
+
+li.selected {
+    background-color: blue;
+    color: white;
+}
+
+li.selected .task-text {
+    text-decoration: line-through;
+}
+
+li .task-text {
+    flex: 1;
+    text-align: center;
+}
+
+li .tick {
+    margin-right: 10px;
+    display: none;
+}
+
+li.selected .tick {
+    display: inline;
+}
+
+li button {
+    border: none;
+    background-color: transparent;
+    color: red;
+    font-size: 1.5em;
+    cursor: pointer;
+    margin-left: 10px;
+}
+
+li button:hover {
+    color: darkred;
+}
+
+
+
+/* Media Queries for Responsive Design */
+@media (max-width: 600px) {
+    .input-container {
+        flex-direction: column;
+    }
+
+    #todo-input {
+        margin-bottom: 10px;
+        width: calc(100% - 20px);
+    }
+
+    #add-button {
+        width: 100%;
+    }
+}
+
+@media (max-width: 400px) {
+    li {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    li button {
+        margin-top: 10px;
+    }
+}
