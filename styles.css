@@ -111,7 +111,7 @@ li.selected .task-text {
 
 li .task-text {
     flex: 1;
-    text-align: center;
+    text-align: left;
 }
 
 li .tick {
