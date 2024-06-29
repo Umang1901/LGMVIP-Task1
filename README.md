@@ -1,5 +1,5 @@
 
-![image](https://github.com/Umang1901/LGMVIP-Task1/assets/117199803/f567b8b4-7ef4-4622-97fd-0a69b28d679e)
+![image](https://github.com/Umang1901/LGMVIP-Task1/assets/117199803/6fc94b62-bc5b-429a-a95e-330bd6f770a2)
 
 ![image](https://github.com/Umang1901/LGMVIP-Task1/assets/117199803/3272a4ff-c798-428a-bdad-d4d46832ffe4)
 
